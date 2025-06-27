@@ -24,7 +24,9 @@ document.getElementById("syncBtn").addEventListener("click", () => {
 
   chrome.storage.sync.set({ companyName });
 
-  fetch(`https://construction-js-injections.pages.dev/bookmarks`)
+  fetch(
+    `https://construction-js-injections.pages.dev/bookmarks?companyName=${companyName}`
+  )
     .then((response) => response.json())
     .then((bookmarkData) => {
       // Remove existing folder (optional)
