@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Company Bookmarks Sync",
+  "version": "1.0",
+  "description": "Pulls the latest set of internal bookmarks.",
+  "permissions": ["bookmarks", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
